@@ -45,6 +45,8 @@
          })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
          
          ga('create', 'UA-81897143-1', 'auto');
+         ga('require', 'linkid', 'linkid.js');
+         ga('require', 'displayfeatures');
          ga('send', 'pageview');
          
         </script>
@@ -104,7 +106,9 @@
                 <div class="col-lg-8 col-lg-offset-2 text-center">
                     <h2 class="section-heading">我們了解你的需求</h2>
                     <hr class="light">
-                    <p class="text-faded">我們團隊也有攝影師，所以十分瞭解拍完照片，還要整理照片有多麼痛苦、原始，所以皮可猴就是為了解決這個問題而誕生，現在你只要拍照並且上傳，由我們的皮可猴(AI)來幫你分類整理照片，現在你擁有更簡單輕鬆的照片整理跟分享方式了。</p>
+                    <p class="text-faded">我們團隊中的攝影師，十分瞭解拍完照片後，整理照片的痛苦和原始，也常為了臨時尋找好的攝影地點和紀錄地點而傷透腦筋，而目前大多分享平台所造成的照片失真，更是減少他分享相片的慾望。
+                    為了解決這些問題，皮可猴（PixelMonkey）因而誕生。</p>
+                    <p class="text-faded">現在你只需要拍照並且上傳照片，我們的皮可猴(AI)便會自懂幫你處理和分類照片，讓你擁有更簡單輕鬆的照片整理跟分享方式了。</p>
                 </div>
             </div>
         </div>
@@ -235,7 +239,7 @@
                     <div class="row">
                         <div class="col-lg-12 text-center">
                             <hr class="star-primary">
-                         <button type="submit" class="btn btn-default btn-lg btn-xl sr-button page-scroll">發送</button>
+                            <button type="submit" class="btn btn-default btn-lg btn-xl sr-button page-scroll onClick="ga('send', 'event', 'onlineshow', 'click', 'question');"">發送</button>
                         </div>
                     </div>
                 </form>
